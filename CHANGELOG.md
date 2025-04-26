@@ -1,6 +1,6 @@
 # Loom | Dependency Injection Component Change Log
 
-## [1.0.0] 2025-04-26
+## [1.0.0] - 2025-04-26
 ### Added
 - Initial release.
 - Cloned from `lumax/dependency-injection-component`.
