@@ -1,8 +1,8 @@
-# Luma | Dependency Injection Component
+# Loom | Dependency Injection Component
 
 <div>
 <!-- Version Badge -->
-<img src="https://img.shields.io/badge/Version-1.3.0-blue" alt="Version 1.3.0">
+<img src="https://img.shields.io/badge/Version-1.0.0-blue" alt="Version 1.0.0">
 <!-- PHP Coverage Badge -->
 <img src="https://img.shields.io/badge/PHP Coverage-96.36%25-green" alt="PHP Coverage 96.36%">
 <!-- License Badge -->
@@ -18,7 +18,7 @@ A PHP package for managing dependencies and dependency injection.
 You can install this package via [Composer](https://getcomposer.org/):
 
 ```bash
-composer require lumax/dependency-injection-component
+composer require loomlabs/loom.di-component
 ```
 
 ## Usage

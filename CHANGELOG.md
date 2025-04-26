@@ -1,35 +1,13 @@
-# Luma | Dependency Injection Component Change Log
+# Loom | Dependency Injection Component Change Log
 
-## [1.3.0] - 2024-05-05
+## [1.0.0] 2025-04-26
 ### Added
-- Add support for configuration parameters as service arguments
+- Initial release.
+- Cloned from `lumax/dependency-injection-component`.
+- Add `Loom` namespace.
 
 ### Changed
-- N/A
-
-### Deprecated
-- N/A
+- Small refactors to the existing codebase.
 
 ### Removed
-- N/A
-
-### Fixed
-- N/A
-
-### Security
-- Updated dependencies
-
----
-
-## [1.2.2] - 2024-03-02
-- Minor housekeeping; `package.json` cleanup, `composer.json` cleanup
-- Update build pipelines
-
-## [1.2.1] - 2024-02-23
-- Update build pipelines
-
-## [1.2.0] - 2024-02-22
-- Added CHANGELOG
-- Added automated build pipeline
-- `DependencyManager` now throws a RuntimeException if `loadDependenciesFromFile` is called with an invalid filetype (such as JSON).
-- Increased test coverage to 100%
+- Remove dependence on `lumax/luma`.

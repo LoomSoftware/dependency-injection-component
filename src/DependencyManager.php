@@ -1,27 +1,18 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Loom\DependencyInjectionComponent;
 
-use Luma\Framework\Luma;
 use Symfony\Component\Yaml\Yaml;
 
 class DependencyManager
 {
-    private DependencyContainer $container;
-
-    /**
-     * @param DependencyContainer $container
-     */
-    public function __construct(DependencyContainer $container)
+    public function __construct(private DependencyContainer $container, private ?AbstractParameterResolver $parameterResolver = null)
     {
-        $this->container = $container;
     }
 
     /**
-     * @param string $filename
-     *
-     * @return void
-     *
      * @throws Exception\NotFoundException
      */
     public function loadDependenciesFromFile(string $filename): void
@@ -33,11 +24,6 @@ class DependencyManager
         }
     }
 
-    /**
-     * @param string $filename
-     *
-     * @return array
-     */
     private function loadConfigFile(string $filename): array
     {
         if (!str_ends_with($filename, '.yaml')) {
@@ -54,10 +40,6 @@ class DependencyManager
     }
 
     /**
-     * @param array $services
-     *
-     * @return void
-     *
      * @throws Exception\NotFoundException
      */
     private function registerServices(array $services): void
@@ -73,11 +55,6 @@ class DependencyManager
         }
     }
 
-    /**
-     * @param array $config
-     *
-     * @return void
-     */
     private function validateServiceConfig(array $config): void
     {
         if (!isset($config['class']) || !class_exists($config['class'])) {
@@ -86,10 +63,6 @@ class DependencyManager
     }
 
     /**
-     * @param array $arguments
-     *
-     * @return array
-     *
      * @throws Exception\NotFoundException
      */
     private function resolveServiceArguments(array $arguments): array
@@ -100,21 +73,16 @@ class DependencyManager
             if (is_string($argument) && str_starts_with($argument, '@')) {
                 $serviceAlias = ltrim($argument, '@');
                 $resolvedArguments[] = $this->container->get($serviceAlias);
-            } elseif (is_string($argument) && str_starts_with($argument, ':') && str_ends_with($argument, ':')) {
-                $resolvedArguments[] = Luma::getConfigParam(trim($argument, ':'));
+            } elseif (is_string($argument) && str_starts_with($argument, ':') && str_ends_with($argument, ':') && $this->parameterResolver) {
+                $resolvedArguments[] = $this->parameterResolver->resolve(trim($argument, ':'));
             } else {
                 $resolvedArguments[] = $argument;
             }
         }
+
         return $resolvedArguments;
     }
 
-    /**
-     * @param string $class
-     * @param array $arguments
-     *
-     * @return object
-     */
     private function instantiateService(string $class, array $arguments): object
     {
         if (empty($arguments)) {

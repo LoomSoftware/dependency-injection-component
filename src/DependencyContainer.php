@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Loom\DependencyInjectionComponent;
 
 use Loom\DependencyInjectionComponent\Exception\NotFoundException;
