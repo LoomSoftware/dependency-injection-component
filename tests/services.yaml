@@ -1,0 +1,16 @@
+services:
+  stdcl:
+    class: \stdClass
+    arguments: []
+  standard_exception:
+    class: \Exception
+    arguments:
+      - 'Always the same error message'
+  arithmetic_error:
+    class: \ArithmeticError
+    arguments:
+      message: 'Always the same error message'
+      code: 0
+      previous: '@standard_exception'
+  assertion_error:
+    class: \AssertionError

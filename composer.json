@@ -1,0 +1,35 @@
+{
+  "name": "loomlabs/loom.di-component",
+  "description": "A Dependency Injection Package",
+  "type": "library",
+  "minimum-stability": "stable",
+  "require": {
+    "symfony/yaml": "^6.3",
+    "psr/container": "^2.0",
+    "lumax/framework-component": "^1.1"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^10.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "Loom\\DependencyInjectionComponent\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Loom\\DependencyInjectionComponent\\Tests\\": "tests/Unit/"
+    }
+  },
+  "scripts": {
+    "test": "php -d xdebug.mode=coverage ./vendor/bin/phpunit --testdox --colors=always --coverage-html coverage --coverage-clover coverage/coverage.xml --testdox-html coverage/testdox.html && npx badger --phpunit ./coverage/coverage.xml && npx badger --version ./composer.json && npx badger --license ./composer.json"
+  },
+  "authors": [
+    {
+      "name": "Daniel Winning",
+      "email": "daniel@winningsoftware.co.uk"
+    }
+  ],
+  "version": "1.3.0",
+  "license": "GPL-3.0-or-later"
+}

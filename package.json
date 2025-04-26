@@ -1,0 +1,16 @@
+{
+  "description": "A PHP package for managing dependencies and dependency injection.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanielWinning/dependency-injection-component.git"
+  },
+  "author": "Daniel Winning <daniel@winningsoftware.co.uk>",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/DanielWinning/dependency-injection-component/issues"
+  },
+  "homepage": "https://github.com/DanielWinning/dependency-injection-component#readme",
+  "devDependencies": {
+    "@dannyxcii/badger": "^0.4.1"
+  }
+}
