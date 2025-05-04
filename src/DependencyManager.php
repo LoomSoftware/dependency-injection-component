@@ -6,10 +6,12 @@ namespace Loom\DependencyInjectionComponent;
 
 use Symfony\Component\Yaml\Yaml;
 
-class DependencyManager
+readonly class DependencyManager
 {
-    public function __construct(private DependencyContainer $container, private ?AbstractParameterResolver $parameterResolver = null)
-    {
+    public function __construct(
+        private readonly DependencyContainer $container,
+        private readonly ?AbstractParameterResolver $parameterResolver = null
+    ) {
     }
 
     /**

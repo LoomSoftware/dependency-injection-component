@@ -4,12 +4,12 @@
 <!-- Version Badge -->
 <img src="https://img.shields.io/badge/Version-1.0.0-blue" alt="Version 1.0.0">
 <!-- PHP Coverage Badge -->
-<img src="https://img.shields.io/badge/PHP%20Coverage-96.36%25-green" alt="PHP Coverage 96.36%">
+<img src="https://img.shields.io/badge/PHP%20Coverage-92.98%25-green" alt="PHP%20Coverage 92.98%">
 <!-- License Badge -->
 <img src="https://img.shields.io/badge/License-GPL--3.0--or--later-34ad9b" alt="License GPL--3.0--or--later">
 </p>
 
-A PHP package for managing dependencies and dependency injection.
+<p>A PHP package for managing dependencies and dependency injection.</p>
 
 ---
 

@@ -6,5 +6,5 @@ namespace Loom\DependencyInjectionComponent;
 
 abstract class AbstractParameterResolver
 {
-    abstract public function resolve(string $parameter): string|int|array;
+    abstract public function resolve(string $parameter): string|int|array|bool|float|null;
 }

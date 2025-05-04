@@ -1,0 +1,6 @@
+options:
+  environment:
+    server:
+      enabled: false
+    database:
+      enabled: false
