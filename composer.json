@@ -1,6 +1,6 @@
 {
-  "name": "loomlabs/loom.di-component",
-  "description": "A Dependency Injection Package",
+  "name": "loomlabs/dependency-injection-component",
+  "description": "A PSR compliant dependenct injection library for PHP.",
   "type": "library",
   "minimum-stability": "stable",
   "require": {
