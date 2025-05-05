@@ -1,6 +1,6 @@
 {
   "name": "loomlabs/dependency-injection-component",
-  "description": "A PSR compliant dependenct injection library for PHP.",
+  "description": "A PSR compliant dependency injection library for PHP.",
   "type": "library",
   "minimum-stability": "stable",
   "require": {
@@ -29,6 +29,6 @@
       "email": "daniel@winningsoftware.co.uk"
     }
   ],
-  "version": "1.0.1",
+  "version": "1.0.2",
   "license": "GPL-3.0-or-later"
 }
