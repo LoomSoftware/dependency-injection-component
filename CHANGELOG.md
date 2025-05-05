@@ -1,5 +1,9 @@
 # Loom | Dependency Injection Component Change Log
 
+## [1.0.1] - 2025-05-05
+### Changed
+- Changed the package name for consistency with other Loom components.
+
 ## [1.0.0] - 2025-04-26
 ### Added
 - Initial release.
