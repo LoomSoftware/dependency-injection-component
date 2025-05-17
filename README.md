@@ -2,11 +2,11 @@
 
 <p>
 <!-- Version Badge -->
-<img src="https://img.shields.io/badge/Version-1.0.2-blue" alt="Version 1.0.2">
+<img src="https://img.shields.io/badge/Version-1.0.3-blue" alt="Version 1.0.3">
 <!-- PHP Coverage Badge -->
 <img src="https://img.shields.io/badge/PHP%20Coverage-92.98%25-green" alt="PHP%20Coverage 92.98%">
 <!-- License Badge -->
-<img src="https://img.shields.io/badge/License-GPL--3.0--or--later-34ad9b" alt="License GPL--3.0--or--later">
+<img src="https://img.shields.io/badge/License-GPL--3.0--or--later-40adbc" alt="License%20GPL-3.0-or-later">
 </p>
 
 <p>A PHP package for managing dependencies and dependency injection.</p>
