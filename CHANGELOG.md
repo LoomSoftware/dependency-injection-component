@@ -1,5 +1,15 @@
 # Loom | Dependency Injection Component Change Log
 
+## [1.0.3] - 2025-05-17
+### Added
+- Added new dev dependency: `loomlabs/badger`.
+
+### Changed
+- Updated dev scripts.
+
+### Removed
+- Removed `@dannyxcii/badger` and `package.json`.
+
 ## [1.0.2] - 2025-05-05
 ### Changed
 - Minor `README` change.
