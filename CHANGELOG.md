@@ -1,5 +1,9 @@
 # Loom | Dependency Injection Component Change Log
 
+## [1.0.4]
+### Fixed
+- Now accepts service config with `.yaml` and `.yml` extensions (previously would only accept `.yaml`)
+
 ## [1.0.3] - 2025-05-17
 ### Added
 - Added new dev dependency: `loomlabs/badger`.

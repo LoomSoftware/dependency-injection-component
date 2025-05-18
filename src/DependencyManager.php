@@ -28,8 +28,20 @@ readonly class DependencyManager
 
     private function loadConfigFile(string $filename): array
     {
-        if (!str_ends_with($filename, '.yaml')) {
-            throw new \RuntimeException("Invalid dependency configuration in YAML file: $filename");
+        $validExtensions = ['yaml', 'yml'];
+        $fileIsValid = false;
+
+        foreach ($validExtensions as $extension) {
+            if (!str_ends_with($filename, sprintf('.%s', $extension))) {
+                continue;
+            }
+
+            $fileIsValid = true;
+            break;
+        }
+
+        if (!$fileIsValid) {
+            throw new \RuntimeException(sprintf('Invalid file format: %s', $filename));
         }
 
         $loadedConfig = Yaml::parseFile($filename);
