@@ -2,11 +2,11 @@
 
 <p>
 <!-- Version Badge -->
-<img src="https://img.shields.io/badge/Version-1.0.4-blue" alt="Version 1.0.4">
-<!-- PHP Coverage Badge -->
-<img src="https://img.shields.io/badge/PHP%20Coverage-92.98%25-green" alt="PHP%20Coverage 92.98%">
+<img src="https://img.shields.io/badge/Version-1.0.5-blue" alt="Version 1.0.5">
+<!-- Coverage Badge -->
+<img src="https://img.shields.io/badge/Coverage-93.75%25-1ccb3c" alt="Coverage 93.75%">
 <!-- License Badge -->
-<img src="https://img.shields.io/badge/License-GPL--3.0--or--later-40adbc" alt="License%20GPL-3.0-or-later">
+<img src="https://img.shields.io/badge/License-GPL--3.0--or--later-40adbc" alt="License GPL-3.0-or-later">
 </p>
 
 <p>A PHP package for managing dependencies and dependency injection.</p>
@@ -18,7 +18,7 @@
 You can install this package via [Composer](https://getcomposer.org/):
 
 ```bash
-composer require loomlabs/dependency-injection-component
+composer require loomsoftware/dependency-injection-component
 ```
 
 ## Usage

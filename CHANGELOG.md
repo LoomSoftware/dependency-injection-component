@@ -1,5 +1,9 @@
 # Loom | Dependency Injection Component Change Log
 
+## [1.0.5] - 2025-05-21
+### Changed
+- Updated for re-release as `loomsoftware/dependency-injection-component`.
+
 ## [1.0.4] - 2025-05-18
 ### Fixed
 - Now accepts service config with `.yaml` and `.yml` extensions (previously would only accept `.yaml`)
